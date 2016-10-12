@@ -1,19 +1,32 @@
 .clock-box{
 	width:730px;
 	height:300px;
-	border:10px;
 	background-color: red;
-	margin-left:auto;
-	text-align: center;
-	display: inline-block;
+	text-align: center
+	
 }
 
 .myClock{
 	font-size: 65px;
-	padding-top:30px;
-
-
-
+	padding-left: 270px;
+	padding-top: 100px;
 
 } 
 
+#hours{
+	float:left;
+}
+
+#minutes{
+	float:left;
+}
+
+#seconds{
+	float: left;
+}
+
+#hexCode{
+	width: 730px;
+	height: 300px;
+
+}

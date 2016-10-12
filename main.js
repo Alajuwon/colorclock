@@ -1,41 +1,36 @@
 
-
 function newTime (){
-
-	
-
 	var today = new Date();
-	var hours = today.getHours();
+	var hours = (today.getHours());
 	var minutes = today.getMinutes(); 
 	var seconds = today.getSeconds();
 	
 	
 	var showHours=document.getElementById('hours')
 
- 		if(hours >= 10){
- 		showHours.innerHTML = hours + ':'
+ 		if(hours > 12){
+ 		showHours.innerHTML = hours -12 + ':'
  	} 	else { 
- 		hours = "0" + hours + ':'
+ 		showHours.innerHTML = "0" + hours + ':'
  	}
 
 	
  	var showMinutes=document.getElementById('minutes')
- 	
+ 		// console.log("Minutes", minutes);
  		if(minutes >= 10){
  		showMinutes.innerHTML = minutes + ':'
  	} 	else {
- 		hours = "0" + minutes + ':'
+ 		showMinutes.innerHTML = "0" + minutes + ':'
  	}
 
 
  var showSeconds=document.getElementById('seconds')
- 	
+	// console.log("Seconds", seconds);
  	if(seconds >= 10){
- 		showSeconds.innerHTML = seconds + ':'
+ 		showSeconds.innerHTML = seconds;
  	} else {
- 		seconds = "0" + seconds + ':'
+ 		showSeconds.innerHTML = "0" + seconds;
  	}
-
 };
 
  	
