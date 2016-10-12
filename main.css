@@ -1,4 +1,19 @@
-.title{
-	font-size: 50px;
+.clock-box{
+	width:730px;
+	height:300px;
+	border:10px;
+	background-color: red;
+	margin-left:auto;
 	text-align: center;
+	display: inline-block;
 }
+
+.myClock{
+	font-size: 65px;
+	padding-top:30px;
+
+
+
+
+} 
+
